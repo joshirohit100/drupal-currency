@@ -7,10 +7,10 @@
 
 namespace Drupal\currency\Plugin\Filter;
 
+use BartFeenstra\CurrencyExchange\ExchangeRateProviderInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\Core\StringTranslation\TranslationInterface;
 use Drupal\currency\InputInterface;
-use Drupal\currency\Plugin\Currency\ExchangeRateProvider\ExchangeRateProviderInterface;
 use Drupal\filter\Plugin\FilterBase;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
