@@ -49,6 +49,10 @@ class ExchangeRateProviderDecoratorTest extends UnitTestCase {
    * @covers ::__construct
    */
   public function testConstruct() {
+    $configuration = array();
+    $plugin_id = $this->randomMachineName();
+    $plugin_definition = array();
+
     $this->sut = new ExchangeRateProviderDecorator($configuration, $plugin_id, $plugin_definition, $this->exchangeRateProvider);
   }
 
