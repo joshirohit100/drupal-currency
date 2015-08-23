@@ -34,11 +34,7 @@ class ExchangeRate extends GenericExchangeRate implements ExchangeRateInterface 
    * @param string $exchange_rate_provider_id
    *   The ID of the exchange rate provider that provided this rate.
    */
-  public function __construct(
-    $source_currency_code,
-    $destination_currency_code,
-    $rate, $exchange_rate_provider_id
-  ) {
+  public function __construct($source_currency_code, $destination_currency_code, $rate, $exchange_rate_provider_id) {
     parent::__construct($source_currency_code, $destination_currency_code, $rate);
     $this->exchangeRateProviderId = $exchange_rate_provider_id;
   }
@@ -53,7 +49,7 @@ class ExchangeRate extends GenericExchangeRate implements ExchangeRateInterface 
    *
    * @return static
    */
-  protected function createFromExchangeRate(GenericExchangerateInterface $other_exchange_rate, $exchange_rate_provider_id) {
+  public static function createFromExchangeRate(GenericExchangerateInterface $other_exchange_rate, $exchange_rate_provider_id) {
     $exchange_rate = new static($other_exchange_rate->getSourceCurrencyCode(), $other_exchange_rate->getDestinationCurrencyCode(), $other_exchange_rate->getRate(), $exchange_rate_provider_id);
     $exchange_rate->setTimestamp($other_exchange_rate->getTimestamp());
 
