@@ -3,14 +3,14 @@
 namespace Drupal\Tests\currency\Unit\Controller {
 
   use Drupal\Core\Form\FormState;
-  use Drupal\currency\Controller\PluginBasedExchangeRateProviderForm;
+  use Drupal\currency\Form\PluginBasedExchangeRateProviderForm;
   use Drupal\currency\Plugin\Currency\ExchangeRateProvider\ExchangeRateProviderManagerInterface;
   use Drupal\currency\PluginBasedExchangeRateProvider;
   use Drupal\Tests\UnitTestCase;
   use Symfony\Component\DependencyInjection\ContainerInterface;
 
   /**
-   * @coversDefaultClass \Drupal\currency\Controller\PluginBasedExchangeRateProviderForm
+   * @coversDefaultClass \Drupal\currency\Form\PluginBasedExchangeRateProviderForm
    *
    * @group Currency
    */
@@ -40,7 +40,7 @@ namespace Drupal\Tests\currency\Unit\Controller {
     /**
      * The class under test.
      *
-     * @var \Drupal\currency\Controller\PluginBasedExchangeRateProviderForm
+     * @var \Drupal\currency\Form\PluginBasedExchangeRateProviderForm
      */
     protected $sut;
 

@@ -5,7 +5,7 @@ namespace Drupal\Tests\currency\Unit\Controller {
   use Drupal\Core\Form\FormStateInterface;
   use Drupal\Core\Url;
   use Drupal\currency\ConfigImporterInterface;
-  use Drupal\currency\Controller\CurrencyLocaleImportForm;
+  use Drupal\currency\Form\CurrencyLocaleImportForm;
   use Drupal\currency\Entity\CurrencyInterface;
   use Drupal\currency\Entity\CurrencyLocaleInterface;
   use Drupal\currency\FormHelperInterface;
@@ -13,7 +13,7 @@ namespace Drupal\Tests\currency\Unit\Controller {
   use Symfony\Component\DependencyInjection\ContainerInterface;
 
   /**
-   * @coversDefaultClass \Drupal\currency\Controller\CurrencyLocaleImportForm
+   * @coversDefaultClass \Drupal\currency\Form\CurrencyLocaleImportForm
    *
    * @group Currency
    */
@@ -43,7 +43,7 @@ namespace Drupal\Tests\currency\Unit\Controller {
     /**
      * The class under test.
      *
-     * @var \Drupal\currency\Controller\CurrencyLocaleImportForm
+     * @var \Drupal\currency\Form\CurrencyLocaleImportForm
      */
     protected $sut;
 

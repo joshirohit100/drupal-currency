@@ -5,7 +5,7 @@ namespace Drupal\currency\Tests\Controller;
 use Drupal\simpletest\WebTestBase;
 
 /**
- * \Drupal\currency\Controller\FixedRatesForm web test.
+ * \Drupal\currency\Form\FixedRatesForm web test.
  *
  * @group Currency
  */

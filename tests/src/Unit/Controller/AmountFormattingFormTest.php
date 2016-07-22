@@ -8,13 +8,13 @@ namespace Drupal\Tests\currency\Unit\Controller {
   use Drupal\Core\Form\FormStateInterface;
   use Drupal\Core\Render\Element\Radios;
   use Drupal\Core\StringTranslation\TranslatableMarkup;
-  use Drupal\currency\Controller\AmountFormattingForm;
+  use Drupal\currency\Form\AmountFormattingForm;
   use Drupal\currency\Plugin\Currency\AmountFormatter\AmountFormatterManagerInterface;
   use Drupal\Tests\UnitTestCase;
   use Symfony\Component\DependencyInjection\ContainerInterface;
 
   /**
-   * @coversDefaultClass \Drupal\currency\Controller\AmountFormattingForm
+   * @coversDefaultClass \Drupal\currency\Form\AmountFormattingForm
    *
    * @group Currency
    */
@@ -30,7 +30,7 @@ namespace Drupal\Tests\currency\Unit\Controller {
     /**
      * The controller under test.
      *
-     * @var \Drupal\currency\Controller\AmountFormattingForm
+     * @var \Drupal\currency\Form\AmountFormattingForm
      */
     protected $controller;
 

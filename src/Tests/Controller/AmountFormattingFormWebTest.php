@@ -5,7 +5,7 @@ namespace Drupal\currency\Tests\Controller;
 use Drupal\simpletest\WebTestBase;
 
 /**
- * \Drupal\currency\Controller\AmountFormattingForm web test.
+ * \Drupal\currency\Form\AmountFormattingForm web test.
  *
  * @group Currency
  */

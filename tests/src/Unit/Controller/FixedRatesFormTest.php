@@ -7,7 +7,7 @@ namespace Drupal\Tests\currency\Unit\Controller {
   use Drupal\Core\Entity\EntityTypeManagerInterface;
   use Drupal\Core\Entity\EntityStorageInterface;
   use Drupal\Core\Form\FormStateInterface;
-  use Drupal\currency\Controller\FixedRatesForm;
+  use Drupal\currency\Form\FixedRatesForm;
   use Drupal\currency\Entity\CurrencyInterface;
   use Drupal\currency\FormHelperInterface;
   use Drupal\currency\Plugin\Currency\ExchangeRateProvider\ExchangeRateProviderInterface;
@@ -17,7 +17,7 @@ namespace Drupal\Tests\currency\Unit\Controller {
   use Symfony\Component\DependencyInjection\ContainerInterface;
 
   /**
- * @coversDefaultClass \Drupal\currency\Controller\FixedRatesForm
+ * @coversDefaultClass \Drupal\currency\Form\FixedRatesForm
  *
  * @group Currency
  */
@@ -61,7 +61,7 @@ class FixedRatesFormTest extends UnitTestCase {
   /**
    * The class under test.
    *
-   * @var \Drupal\currency\Controller\FixedRatesForm
+   * @var \Drupal\currency\Form\FixedRatesForm
    */
   protected $sut;
 
